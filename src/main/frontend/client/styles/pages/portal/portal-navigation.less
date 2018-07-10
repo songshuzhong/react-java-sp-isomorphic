@@ -1,0 +1,236 @@
+.portal.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+
+.portal.nav:hover {
+  background-color: #0071D1;
+}
+
+.portal.nav .top-content {
+  height: 40px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.portal.nav .bottom-content {
+  height: 45px;
+}
+
+.portal.nav {
+  color: #ffffff;
+
+  .top-content, .bottom-content {
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #4799FD ;
+      text-decoration: none;
+    }
+    ul {
+      margin: 0;
+      font-size: 16px;
+      padding-left: 2%;
+    }
+
+    li {
+      width: 9%;
+      height: 100%;
+      list-style: none;
+      float: left;
+    }
+
+    .hover-row-nav ul li {
+      float: none;
+    }
+
+  }
+
+  .top-content {
+
+    li {
+      padding-top: 8px;
+      cursor: pointer;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-top: 0;
+      width: 15%;
+    }
+
+    .login-username{
+      color: white;
+    }
+
+    .login-out {
+      display: none;
+      color: white;
+      width: 80px;
+      height: 32px;
+      background-color: #272b2e;
+      font-size: 14px;
+      padding: 5px 5px 5px 10px;
+      border-radius: 2px;
+      margin-top: 8px;
+    }
+
+    .login-username:hover {
+
+      color: #4799FD;
+      .login-out {
+        display: block;
+      }
+    }
+
+    .login-out:hover {
+      color: #4799FD;
+      display: block;
+    }
+  }
+}
+
+
+.portal.nav .all-nav-div, .portal.nav .service-nav-div {
+  height: 100%;
+  width: 80%;
+  margin: 0 20% 0 0;
+  padding-top: 8px;
+  cursor: default;
+}
+
+.hover-row-nav {
+  position: absolute;
+  width: 100%;
+  top: 85px;
+  background-color: #272b2e;
+  padding-bottom: 20px;
+}
+
+.hover-row-nav .item ul {
+  width: 150px;
+  height: 100%;
+  color: white;
+  font-size: 14px;
+  padding-left: 0;
+
+  li {
+    width: 100%;
+    list-style: none;
+    padding: 5px 10px;
+    float: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #4799FD;
+  }
+}
+
+.hover-row-nav .cataName {
+  font-size: 16px;
+}
+
+.hover-row-nav .epm.row {
+  margin: 0;
+}
+
+.hover-row-nav .svcName {
+  font-size: 14px;
+}
+
+.hover-nav {
+  position: absolute;
+  width: 600px;
+  height: 100%;
+  top: 85px;
+  left: 0px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color: #4799FD;
+  }
+}
+
+.hover-nav .nav {
+  float: left;
+  width: 200px;
+  height: 100%;
+  border-right: 1px solid hsla(0,0%,100%,.15);
+  background-color: #272b2e;
+}
+
+.hover-nav .nav.second, .hover-nav .nav.third {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  height: 100%;
+}
+
+.hover-nav .nav.second ul, .hover-nav .nav.first ul{
+  margin-top: 15px;
+}
+
+.hover-nav ul {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 14px;
+  padding-left: 0;
+
+  li {
+    width: 100%;
+    list-style: none;
+    padding: 5px 20px;
+
+    .gt {
+      float: right;
+      font-size: 20px;
+    }
+  }
+}
+
+.hover-nav .first .first-li:hover {
+  color: #4799FD;
+}
+
+.hover-nav .first .second .second-li:hover {
+  color: #4799FD;
+}
+
+.hover-nav .first .second .second-li .third .third-li:hover {
+  color: #4799FD;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.all-av-div:hover, .service-nav:hover {
+  color: #4799FD;
+}
+
+// 清除父元素的浮动问题
+.clearfix:after{
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}

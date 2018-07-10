@@ -67,3 +67,18 @@ export const extend = ( ...args ) => {
 
   return target;
 };
+
+export const unique = ( array, value ) => {
+
+  if ( array instanceof Array && value ) {
+    if ( array.indexOf( value ) == -1 ) {
+      array.push( value );
+    } else {
+      array.splice( array.indexOf( value ), 1 );
+    }
+
+    return array;
+  } else {
+    return [ array, value ]
+  }
+};
